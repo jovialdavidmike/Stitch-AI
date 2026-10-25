@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Private tailor profile and workshop preferences",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string", "maxLength": 100 },
+        "atelierName": { "type": "string", "maxLength": 100 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "email", "createdAt"]
+    },
+    "SavedSketch": {
+      "title": "SavedSketch",
+      "description": "Tailor hand-drawn sketch, snapped photo, and AI variation concepts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string", "maxLength": 150 },
+        "clientName": { "type": "string", "maxLength": 100 },
+        "category": { "type": "string", "maxLength": 50 },
+        "status": { "type": "string", "maxLength": 30 },
+        "fabricType": { "type": "string", "maxLength": 100 },
+        "yardage": { "type": "string", "maxLength": 50 },
+        "thumbnail": { "type": "string" },
+        "notes": { "type": "string", "maxLength": 2000 },
+        "variationType": { "type": "string", "maxLength": 50 },
+        "tags": { "type": "array" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "title", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User tailor private profile"
+    },
+    "/users/{userId}/sketches/{sketchId}": {
+      "schema": "SavedSketch",
+      "description": "Private design vault of snapped sketches, variations and tailor notes"
+    }
+  }
+}

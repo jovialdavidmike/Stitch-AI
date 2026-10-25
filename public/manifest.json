@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "StitchAI — Creative Fashion & Tailoring Studio",
+  "short_name": "StitchAI",
+  "description": "Mobile-first creative assistant for fashion designers and bespoke tailors with offline vault and pattern deconstruction.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0c0c0e",
+  "background_color": "#0c0c0e",
+  "icons": [
+    {
+      "src": "/src/assets/images/trending_fitted_kaftan_1792948464218.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/assets/images/trending_modern_agbada_1792948463357.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["lifestyle", "productivity", "utilities"]
+}

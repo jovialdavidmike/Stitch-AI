@@ -1,0 +1,6 @@
+{
+  "name": "StitchAI — Creative Fashion & Tailoring Studio",
+  "description": "Mobile-first creative assistant for fashion designers and bespoke tailors: trending cuts, sketch exploration, pattern deconstruction, and workshop fabric guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
